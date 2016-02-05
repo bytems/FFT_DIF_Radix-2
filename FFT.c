@@ -1,23 +1,14 @@
-// Mohamed Saleh,
-
-
 ////////////////////////////////////////////////////////////////
-// Filename: fft_ex.c
+// Filename: fft.c
 //
 // Synopsis: Example FFT routine. Can run on nearly any CPU that
 //   supports a C compiler. This code calculates the FFT
 //   (decimation-in-time) of an N point cfloat data sequence.
-//
-//   This algorithm is based on the discussion in
-//   "C Algorithms for Real-Time DSP", by Paul M. Embree
-//   Prentice-Hall PTR, copyright 1995.
-//
-// Note: This is NOT a real-time program
+
 ////////////////////////////////////////////////////////////////
 
 #include <math.h>
 #include <stdio.h>
-
 
 #define PI 3.1415926535897932
 
@@ -26,8 +17,6 @@ typedef struct complex_float {
     float re;  // The Real part of a complex number
     float im;  // The Imaginary part of a complex number
 } cfloat;
-
-
 
 ////////////////////////////////////////////
 
